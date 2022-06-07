@@ -1,4 +1,4 @@
-const indexController = require("../controller/indexController");
+const indexController = require("../controller/indexConroller");
 const { jwtMiddleware } = require("../../jwtMiddleware");
 
 exports.indexRouter = function (app) {

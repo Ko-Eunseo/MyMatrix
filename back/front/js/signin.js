@@ -36,7 +36,6 @@ async function signin(event) {
   try {
     const res = await axios(config);
 
-    console.log(res);
     if (res.data.code !== 200) {
       alert(res.data.message);
       return false;
@@ -46,7 +45,6 @@ async function signin(event) {
     alert(res.data.message);
     location.href = "index.html";
     return true;
-
   } catch (err) {
     console.error(err);
   }

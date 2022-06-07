@@ -26,11 +26,6 @@ app.use(compression());
 indexRouter(app);
 userRouter(app);
 
-app.post("/user", function (req, res) {
-  const name = req.body.name;
-  return res.send(name);
-});
-
 app.listen(port, () => {
-  console.log(`Express app listening at port: ${port}`)
-})
+  console.log(`Express app listening at port: ${port}`);
+});
